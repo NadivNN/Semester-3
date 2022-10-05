@@ -72,5 +72,24 @@ namespace Semester_3
                 }
             }
         }
+        static void Main(string[] args)
+        {
+            // Creating the object of the bubbleShort class
+            Program myList = new Program();
+
+            //Pemanggilan fungsi untuk menerima elemen array
+            myList.Read();
+            // Pemanggilan fungsi untuk mengurutkan array
+            myList.BubbleSortArray();
+            // Pemanggilan fungsi untuk menampilkan array yang tersusun
+            myList.display();
+            // Exit
+            Console.WriteLine("\n\nTekan Tombol Apa Saja Untuk Keluar.");
+            Console.Read();
+        }
     }
 }
+        
+    
+
+    
