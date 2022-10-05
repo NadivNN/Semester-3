@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Semester3
+namespace Semester_3
 {
     class Program
     {
@@ -33,17 +33,26 @@ namespace Semester3
             Console.WriteLine(" Masukkan elemen array ");
             Console.WriteLine("-----------------------");
 
-            // Pengguna memasukkan elemen pada party 
+            // Pengguna memasukkan elemen pada array
             for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
                 a[i] = Int32.Parse(s1);
             }
-
         }
-      
+        public void display()
+        {
+            //Menampilkan array yang tersusun
+            Console.WriteLine("");
+            Console.WriteLine("_________________________________");
+            Console.WriteLine("Element array yang telah tersusun");
+            Console.WriteLine("_________________________________");
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(a[j]);
+            }
+            Console.WriteLine("");
         }
     }
-
 }
